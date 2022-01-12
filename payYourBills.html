@@ -1,0 +1,187 @@
+<title>Pay Your Bills</title>
+<link rel="stylesheet" href="style.css">
+
+<body class="Pay-body">
+    <h1 class="Pay-h1">Pay Your Bills</h1>
+    <div id="Pay">
+        <form action="" method="get" class="Pay-form">
+            <div class="dropdown-container">
+                <select name="operator" id="Pay-select" required>
+                    <option value="">--Select Electricity Provider--</option>
+                    <option name="India Power" value="IPE">India Power</option>
+                    <option name="Ajmer Vidyut Vitran Nigam - Rajasthan" value="ARE">Ajmer Vidyut Vitran Nigam -
+                        Rajasthan</option>
+                    <option name="APEPDCL - Eastern Power Distribution CO AP Ltd." value="AEE">APEPDCL - Eastern
+                        Power
+                        Distribution CO
+                        AP Ltd.</option>
+                    <option name="APSPDCL - Southern Power Distribution CO AP Ltd." value="ASE">APSPDCL - Southern
+                        Power
+                        Distribution CO
+                        AP Ltd.</option>
+                    <option name="Assam Power Distribution Company Ltd (APDCL) (Non-RAPDR) - ASSAM" value="ANE">
+                        Assam
+                        Power Distribution
+                        Company Ltd (APDCL) (Non-RAPDR) - ASSAM</option>
+                    <option name="Assam Power Distribution Company Ltd. (APDCL)" value="AAE">Assam Power
+                        Distribution
+                        Company Ltd.
+                        (APDCL)</option>
+                    <option name="BESCOM - Bengaluru" value="BBE">BESCOM - Bengaluru</option>
+                    <option name="BEST Undertaking - Mumbai" value="BME">BEST Undertaking - Mumbai</option>
+                    <option name="Bharatpur Electricity Services Ltd. (BESL)" value="BPE">Bharatpur Electricity
+                        Services
+                        Ltd. (BESL)
+                    </option>
+                    <option name="Bikaner Electricity Supply Limited (BKESL)" value="BKE">Bikaner Electricity Supply
+                        Limited (BKESL)
+                    </option>
+                    <option name="BSES Rajdhani - Delhi" value="BRE">BSES Rajdhani - Delhi</option>
+                    <option name="BSES Yamuna - Delhi" value="BYE">BSES Yamuna - Delhi</option>
+                    <option name="CESU - ODISHA" value="COE">CESU - ODISHA</option>
+                    <option name="Chamundeshwari Electricity Supply Corp Ltd (CESCOM) - KARNATAKA" value="CKE">
+                        Chamundeshwari
+                        Electricity Supply Corp Ltd (CESCOM) - KARNATAKA</option>
+                    <option name="CESC - West Bengal" value="CWE">CESC - West Bengal</option>
+                    <option name="CSPDCL - Chhattisgarh" value="CCE">CSPDCL - Chhattisgarh</option>
+                    <option name="Daman and Diu Electricity" value="DDE">Daman and Diu Electricity</option>
+                    <option name="Dakshin Gujarat Vij Company" value="DGE">Dakshin Gujarat Vij Company</option>
+                    <option name="Dakshin Haryana Bijli Vitran Nigam" value="DHE">Dakshin Haryana Bijli Vitran Nigam
+                    </option>
+                    <option name="Department of Power - NAGALAND" value="NNE">Department of Power - NAGALAND
+                    </option>
+                    <option name="DNHPDCL - DADRA &amp; NAGAR HAVELI" value="DNE">DNHPDCL - DADRA &amp; NAGAR HAVELI
+                    </option>
+                    <option name="GESCOM - KARNATAKA" value="GKE">GESCOM - KARNATAKA</option>
+                    <option name="Goa Electricity Department - GOA" value="GME">Goa Electricity Department - GOA
+                    </option>
+                    <option name="Hubli Electricity Supply Company Ltd (HESCOM) - KARNATAKA" value="HKE">Hubli
+                        Electricity Supply
+                        Company Ltd (HESCOM) - KARNATAKA</option>
+                    <option name="Himachal Pradesh State Electricity Board" value="HPE">Himachal Pradesh State
+                        Electricity Board
+                    </option>
+                    <option name="Jaipur Vidyut Vitran Nigam - Rajasthan" value="JRE">Jaipur Vidyut Vitran Nigam -
+                        Rajasthan</option>
+                    <option name="Jamshedpur Utilities &amp; Services (JUSCO)" value="JUE">Jamshedpur Utilities
+                        &amp;
+                        Services (JUSCO)
+                    </option>
+                    <option name="Jharkhand Bijli Vitran Nigam Ltd.(JBVNL)" value="JBE">Jharkhand Bijli Vitran Nigam
+                        Ltd.(JBVNL)
+                    </option>
+                    <option name="Jodhpur Vidyut Vitran Nigam - Rajasthan" value="DRE">Jodhpur Vidyut Vitran Nigam -
+                        Rajasthan</option>
+                    <option name="Kanpur Electricity Supply Company Ltd (KESCO)" value="KUE">Kanpur Electricity
+                        Supply
+                        Company Ltd
+                        (KESCO)</option>
+                    <option name="Kerala State Electricity Board Ltd (KSEBL)" value="KSE">Kerala State Electricity
+                        Board
+                        Ltd (KSEBL)
+                    </option>
+                    <option name="Kota Electricity Distribution - RAJASTHAN" value="KRE">Kota Electricity
+                        Distribution -
+                        RAJASTHAN
+                    </option>
+                    <option name="Madhya Kshetra Vitaran - MADHYA PRADESH" value="MME">Madhya Kshetra Vitaran -
+                        MADHYA
+                        PRADESH</option>
+                    <option name="Madhya Kshetra Vitaran (Urban) - MADHYA PRADESH" value="MUE">Madhya Kshetra
+                        Vitaran
+                        (Urban) - MADHYA
+                        PRADESH</option>
+                    <option name="Madhya Gujarat Vij Company" value="MGE">Madhya Gujarat Vij Company</option>
+                    <option name="MSEDC - MAHARASHTRA" value="MDE">MSEDC - MAHARASHTRA</option>
+                    <option name="MEPDCL - MEGHALAYA" value="MEE">MEPDCL - MEGHALAYA</option>
+                    <option name="Mangalore Electricity Supply Co Ltd (MESCOM)" value="MSE">Mangalore Electricity
+                        Supply
+                        Co Ltd (MESCOM)
+                    </option>
+                    <option name="Muzaffarpur Vidyut Vitran" value="MBE">Muzaffarpur Vidyut Vitran</option>
+                    <option name="NESCO - ODISHA" value="NOE">NESCO - ODISHA</option>
+                    <option name="New Delhi Municipal Council" value="NME">New Delhi Municipal Council</option>
+                    <option name="Noida Power - Noida" value="NUE">Noida Power - Noida</option>
+                    <option name="North Bihar Power Distribution Company Ltd." value="NBE">North Bihar Power
+                        Distribution Company Ltd.
+                    </option>
+                    <option name="Paschim Gujarat Vij Company" value="PGE">Paschim Gujarat Vij Company</option>
+                    <option name="Paschim Kshetra Vitaran - Madhya Pradesh" value="MPE">Paschim Kshetra Vitaran -
+                        Madhya
+                        Pradesh
+                    </option>
+                    <option name="Poorv Kshetra Vitaran (Rural) - MADHYA PRADESH" value="MAE">Poorv Kshetra Vitaran
+                        (Rural) - MADHYA
+                        PRADESH</option>
+                    <option name="Poorv Kshetra Vitaran (Urban) - MADHYA PRADESH" value="MCE">Poorv Kshetra Vitaran
+                        (Urban) - MADHYA
+                        PRADESH</option>
+                    <option name="Power &amp; Electricity Department - MIZORAM" value="PME">Power &amp; Electricity
+                        Department - MIZORAM
+                    </option>
+                    <option name="Punjab State Power Corporation Limited" value="PPE">Punjab State Power Corporation
+                        Limited</option>
+                    <option name="Sikkim Power (RURAL)" value="SKE">Sikkim Power (RURAL)</option>
+                    <option name="Sikkim Power (URBAN)" value="SUE">Sikkim Power (URBAN)</option>
+                    <option name="South Bihar Power Distribution Company Ltd." value="SBE">South Bihar Power
+                        Distribution Company Ltd.
+                    </option>
+                    <option name="Reliance Energy - Mumbai" value="AME">Reliance Energy - Mumbai</option>
+                    <option name="SNDL Power - NAGPUR" value="SNE">SNDL Power - NAGPUR</option>
+                    <option name="SOUTHCO - ODISHA" value="SOE">SOUTHCO - ODISHA</option>
+                    <option name="Tata Power - Delhi" value="NDE">Tata Power - Delhi</option>
+                    <option name="Tata Power - MUMBAI" value="TME">Tata Power - MUMBAI</option>
+                    <option name="TNEB - TAMIL NADU" value="TNE">TNEB - TAMIL NADU</option>
+                    <option name="TP Ajmer Distribution Ltd (TPADL)" value="AJE">TP Ajmer Distribution Ltd (TPADL)
+                    </option>
+                    <option name="Tripura State Electricity Corporation Ltd (TSECL)" value="TTE">Tripura State
+                        Electricity Corporation
+                        Ltd (TSECL)</option>
+                    <option name="Torrent Power" value="TPE">Torrent Power</option>
+                    <option name="Uttar Gujarat Vij Company" value="UGE">Uttar Gujarat Vij Company</option>
+                    <option name="Uttar Haryana Bijli Vitran Nigam" value="UHE">Uttar Haryana Bijli Vitran Nigam
+                    </option>
+                    <option name="Uttar Pradesh Power Corp Ltd (UPPCL) - RURAL" value="URE">Uttar Pradesh Power Corp
+                        Ltd
+                        (UPPCL) - RURAL
+                    </option>
+                    <option name="Uttar Pradesh Power Corp. Ltd. (UPPCL) - URBAN" value="UPE">Uttar Pradesh Power
+                        Corp.
+                        Ltd. (UPPCL) -
+                        URBAN</option>
+                    <option name="Uttarakhand Power Corporation Limited" value="UKE">Uttarakhand Power Corporation
+                        Limited</option>
+                    <option name="WESCO - ODISHA" value="WOE">WESCO - ODISHA</option>
+                    <option name="West Bengal State Electricity Distribution Co Ltd" value="WWE">West Bengal State
+                        Electricity
+                        Distribution Co Ltd</option>
+
+                </select>
+            </div>
+            <br>
+            <input size="30" type="text" name="cNumber" placeholder="Consumer Number"
+                onkeypress='validate(event)' id="cNumber" maxlength="12" required>
+            <br>
+            <input name="submit" type="submit" value="PROCEED" id="Pay-submit"/>
+        </form>
+    </div>
+    <script>
+        function validate(evt) {
+            var theEvent = evt || window.event;
+
+            // Handle paste
+            if (theEvent.type === 'paste') {
+                key = event.clipboardData.getData('text/plain');
+            } else {
+                // Handle key press
+                var key = theEvent.keyCode || theEvent.which;
+                key = String.fromCharCode(key);
+            }
+            var regex = /[0-9]/;
+            if (!regex.test(key)) {
+                theEvent.returnValue = false;
+                if (theEvent.preventDefault) theEvent.preventDefault();
+            }
+        }
+    </script>
+</body>

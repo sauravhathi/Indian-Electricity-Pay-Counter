@@ -1,0 +1,139 @@
+<title>About</title>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+    }
+
+    html {
+        box-sizing: border-box;
+    }
+
+    *,
+    *:before,
+    *:after {
+        box-sizing: inherit;
+    }
+
+    .column {
+        float: left;
+        width: 34%;
+        margin-bottom: 16px;
+        padding: 0 8px;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin: 8px;
+        background-color: #ffd73e33;
+    }
+
+    .card:hover {
+        background-color: white;
+    }
+
+    .about-section {
+        padding: 50px;
+        text-align: center;
+        background-color: #ffd73e33;
+        color: black;
+    }
+
+    .container {
+        padding: 0 16px;
+    }
+
+    .container::after,
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    .row {
+        margin-left: 24%;
+    }
+
+    .title {
+        color: blue;
+    }
+
+    .button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 8px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+    }
+
+    .button:hover {
+        background-color: red;
+        color: white;
+    }
+
+    .about-a {
+        text-decoration: none;
+        color: white;
+    }
+
+    @media screen and (max-width: 650px) {
+        .column {
+            width: 100%;
+            display: block;
+        }
+
+        .row {
+            margin-left: 13%;
+            margin-right: 13%;
+        }
+    }
+</style>
+
+<body>
+
+    <div class="about-section">
+        <h1>About</h1>
+    </div>
+
+    <h2 style="text-align:center">Our Team</h2>
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <img src="WhatsApp Image 2021-04-29 at 10.34.06 AM.jpeg" alt="Saurav Kumar">
+                <div class="container">
+                    <h2>Saurav Kumar</h2>
+                    <p class="title">Software Developer</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, odit!</p>
+                    <p>sauravhathi680@gmail.com</p>
+                    <p><button class="button"><a href="mailto:sauravhathi680@gmail.com"
+                                class="about-a">Contact</a></button></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img src="WhatsApp Image 2021-04-29 at 11.18.31 AM.jpeg" alt="Rohit Jha">
+                <div class="container">
+                    <h2>Rohit Jha</h2>
+                    <p class="title">Software Developer</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, nesciunt!</p>
+                    <p>rohitjha123@gmail.com</p>
+                    <p><button class="button"><a href="mailto:sauravhathi680@gmail.com"
+                                class="about-a">Contact</a></button></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

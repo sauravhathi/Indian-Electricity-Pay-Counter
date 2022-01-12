@@ -1,0 +1,254 @@
+<title>New Connection</title>
+<link rel="stylesheet" href="style.css">
+
+<body class="nConnection-body">
+    <h1 class="nConnection-h1">New Connection</h1>
+    <div class="newCone">
+        <form action="" method="POST" class="nConnection-form">
+            <label for="mobileNumber">Mobile No.<sup>*</sup></label>
+            <input type="text" id="mobileNumber" name="mobileNumber" class="nConnection-text" onkeypress='validate(event)' maxlength="10"
+                required>
+            <br>
+            <label for="district">District<sup>*</sup></label>
+            <select required name="district" id="district" class="nConnection-select">
+                <option value="">--Select District--</option>
+                <option value="209">ARARIA</option>
+                <option value="240">ARWAL</option>
+                <option value="235">AURANGABAD</option>
+                <option value="225">BANKA</option>
+                <option value="222">BEGUSARAI</option>
+                <option value="224">BHAGALPUR</option>
+                <option value="231">BHOJPUR</option>
+                <option value="232">BUXAR</option> 
+                <option value="215">DARBHANGA</option>
+                <option value="236">GAYA</option>
+                <option value="217">GOPALGANJ</option>
+                <option value="238">JAMUI</option>
+                <option value="239">JEHANABAD</option>
+                <option value="233">KAIMUR</option>
+                <option value="212">KATIHAR</option>
+                <option value="223">KHAGARIA</option>
+                <option value="210">KISHANGANJ</option>
+                <option value="227">LAKHISARAI</option>
+                <option value="213">MADHEPURA</option>
+                <option value="207">MADHUBANI</option>
+                <option value="226">MUNGER</option>
+                <option value="216">MUZAFFARPUR</option>
+                <option value="229">NALANDA</option>
+                <option value="237">NAWADA</option>
+                <option value="203">PASHCHIM CHAMPARAN</option>
+                <option value="230">PATNA</option>
+                <option value="204">PURBI CHAMPARAN</option>
+                <option value="211">PURNIA</option>
+                <option value="234">ROHTAS</option>
+                <option value="214">SAHARSA</option>
+                <option value="221">SAMASTIPUR</option>
+                <option value="219">SARAN</option>
+                <option value="228">SHEIKHPURA</option>
+                <option value="205">SHEOHAR</option>
+                <option value="206" selected>SITAMARHI</option>
+                <option value="218">SIWAN</option>
+                <option value="208">SUPAUL</option>
+                <option value="220">VAISHALI</option>
+            </select>
+            <br>
+            <input name="button" type="button" class="nConnection-button" value="Generate OTP" required>
+            <br>
+            <br>
+            <span style="color: red;">* Mandatory Fields(Please upload all docs in jpeg/jpg format)</span>
+            <br>
+            <label for="mobileNumber">Connection Type:</label>
+            <select class="nConnection-select" required>
+                <option selected="selected" value="Agriculture">Agriculture</option>
+                <option value="Domestic">Domestic</option>
+                <option value="Industrial">Industrial</option>
+                <option value="Commercial">Commercial</option>
+                <option value="Hgn">Har Ghar Nal</option>
+                <option value="PWW">Public Water Works</option>
+            </select>
+            <br>
+            <label for="OTP">Enter OTP<sup>*</sup></label>
+            <input type="text" id="OTP" name="OTP" class="nConnection-text" onkeypress='validate(event)' maxlength="6" size="6" required>
+            <br>
+            <h3 class="nConnection-h3" style="margin:20 0 0 0;">1. Applicant Details</h3>
+            <label for="applicantName">Enter Applicant Name<sup>*</sup></label>
+            <input type="text" id="applicantName" name="applicantName" class="nConnection-text" required size="30" maxlength="20" minlength="3">
+            <br>
+            <label for="hforName">Enter Husband/Father Name<sup>*</sup></label>
+            <input type="text" id="hforName" name="hforName" class="nConnection-text" required maxlength="20" minlength="3">
+            <br>
+            <h3 class="nConnection-h3" style="margin:20 0 0 0;">2. Contact Details of Applicant</h3>
+            <label for="emailId1">E-Mail ID</label>
+            <input type="text" id="emailId1" name="emailId1" class="nConnection-text" required size="35">
+            <br>
+            <label for="houseNo">House No</label>
+            <input type="text" id="houseNo" name="houseNo" class="nConnection-text" size="10" onkeypress='validate(event)' maxlength="10">
+            <br>
+            <label for="khataNo">Khata No</label>
+            <input type="text" id="khataNo" name="khataNo" class="nConnection-text">
+            <br>
+            <label for="khasraNo">Khasra No<sup>*</sup></label>
+            <input type="text" id="khasraNo" name="khasraNo" class="nConnection-text" required>
+            <br>
+            <label for="street">Street<sup>*</sup></label>
+            <input type="text" id="street" name="street" class="nConnection-text" required>
+            <br>
+            <label for="addressLine1">Address Line 1</label>
+            <input type="text" id="addressLine1" name="addressLine1" class="nConnection-text" required size="40">
+            <br>
+            <label for="addressLine2">Address Line 2</label>
+            <input type="text" id="addressLine2" name="addressLine2" class="nConnection-text" required size="40">
+            <br>
+            <label for="cCity">City<sup>*</sup></label>
+            <input type="text" id="cCity" name="cCity" class="nConnection-text" required>
+            <br>
+            <label for="cDistrict">District<sup>*</sup></label>
+            <input type="text" id="cDistrict" name="cDistrict" class="nConnection-text" value="SITAMARHI" required>
+            <br>
+            <label for="cBlock">Block<sup>*</sup></label>
+            <select required name="cBlock" id="cBlock" class="nConnection-select">
+                <option value="">---Select---</option>
+                <option value="1063">Bairgania</option>
+                <option value="1075">Bajpatti</option>
+                <option value="1069">Bathnaha</option>
+                <option value="1072">Belsand</option>
+                <option value="1079">Bokhara</option>
+                <option value="1076">Charaut</option>
+                <option value="1074">Dumra</option>
+                <option value="1065">Majorganj</option>
+                <option value="1078">Nanpur</option>
+                <option value="1067">Parihar</option>
+                <option value="1071">Parsauni</option>
+                <option value="1077">Pupri</option>
+                <option value="1070">Riga</option>
+                <option value="1073">Runisaidpur</option>
+                <option value="1066">Sonbarsa</option>
+                <option value="1064">Suppi</option>
+                <option value="1068">Sursand</option>
+            </select>
+            <br>
+            <label for="panchayat">Panchayat<sup>*</sup></label>
+            <select required name="panchayat" id="panchayat"  class="nConnection-select">
+                <option value="">--Select--</option>
+                <option value="101002">BARRI BEHTA</option>
+                <option value="101003">BHANTAWARI</option>
+                <option selected="selected" value="101004">CHORAUT PASHCHIM</option>
+                <option value="101005">CHORAUT PURVI</option>
+                <option value="101006">CHORAUT UTTAR</option>
+                <option value="101007">PARIGAMA</option>
+                <option value="101008">YADUPATTI</option>
+            </select>
+            <br>
+            <label for="villageORward">Village/Ward<sup>*</sup></label>
+            <select required name="villageORward" id="villageORward" class="nConnection-select">
+                <option value="">--Select--</option>
+                <option value="1076">Choraut</option>
+            </select>
+            <br>
+            <label for="pinCode">Pin Code<sup>*</sup></label>
+            <input type="text" id="pinCode" name="pinCode" class="nConnection-text" onkeypress='validate(event)' maxlength="6" required size="6">
+            <br>
+            <label for="division">Division<sup>*</sup></label>
+            <select required name="division" id="division" class="nConnection-select">
+                <option value="">--Select--</option>
+                <option value="206" selected>Sitamarhi</option>
+            </select>
+            <br>
+            <label for="subDivision">SubDivision<sup>*</sup></label>
+            <select required name="subDivision" id="subDivision" class="nConnection-select">
+                <option value="1077" selected>Pupri</option>
+            </select>
+            <br>
+            <label for="section">Section<sup>*</sup></label>
+            <select required name="section" id="section" class="nConnection-select">
+                <option value="1077" selected>Pupri</option>
+            </select>
+            <br>
+            <h3 class="nConnection-h3" style="margin:20 0 0 0;">3. Connection Details</h3>
+            <label for="tariff">Tariff<sup>*</sup></label>
+            <select required name="tariff" id="tariff" class="nConnection-select">
+                <option value="">--Select--</option>
+                <option value="000">IAS1</option>
+                <option value="000">IAS2D</option>
+            </select>
+            <br>
+            <label for="phase">Phase<sup>*</sup></label>
+            <select required name="phase" id="phase" class="nConnection-select">
+                <option value="">--Select--</option>
+                <option value="000">1</option>
+                <option value="000">3</option>
+            </select>
+            <br>
+            <label for="load">Load<sup>*</sup></label>
+            <input type="text" id="load" name="load" class="nConnection-text" size="10" required>
+            <br>
+            <h3 class="nConnection-h3" style="margin:20 0 0 0;">4. ID Proof of Applicant<sup>*</sup></h3><span style="color: red;">[Document
+                size must be less than 500KB]</span>
+            <br>
+            <label for="idProofOfApplicant">Document Type</label>
+            <select required name="idProofOfApplicant" id="idProofOfApplicant" class="nConnection-select">
+                <option value="">--Select--</option>
+                <option value="001">Aadhar Card</option>
+                <option value="002">Pan Card</option>
+                <option value="003">Voter Id</option>
+                <option value="004">Driving License</option>
+            </select>
+            <input style="outline: 1px solid black; padding: 2px;" type="file" id="docImage" name="docImage" required>
+            <br>
+            <h3 class="nConnection-h3" style="margin:20 0 0 0;">5. Address Proof of Applicant<sup>*</sup></h3><span
+                style="color: red;">[Document size must be
+                less than 500KB]</span>
+            <br>
+            <label for="addressProofOfApplicant">Document Type</label>
+            <select required name="addressProofOfApplicant" id="addressProofOfApplicant" class="nConnection-select">
+                <option value="">--Select--</option>
+                <option value="001">Aadhar Card</option>
+                <option value="002">Pan Card</option>
+                <option value="003">Voter Id</option>
+                <option value="004">Driving License</option>
+            </select>
+            <br>
+            <div style="float: left; margin-right: 10px;">
+                <h3 style="margin:20 0 10 0;color: black;">Front Page of Address Proof<sup>*</sup></h3>
+                <input style="outline: 1px solid black; padding: 2px;" type="file" id="frontPageOfAddressProof"
+                    name="frontPageOfAddressProof" required>
+            </div>
+            <h3 class="nConnection-h3" style="margin:20 0 10 0;">Last Page of Address Proof<sup>*</sup></h3>
+            <input style="outline: 1px solid black; padding: 2px;" type="file" id="lastPageOfAddressProof"
+                name="lastPageOfAddressProof" required>
+            <br>
+            <h3 class="nConnection-h3" style="margin:20 0 10 0;">6. Photo of Applicant<sup>*</sup></h3>
+            <input style="outline: 1px solid black; padding: 2px;" type="file" id="photoOfApplicant"
+                name="photoOfApplicant" required>
+            <br>
+            <h3 class="nConnection-h3" style="margin:20 0 10 0;">7. Photo of LandReceipt1(First Page of Land Receipt)<sup>*</sup></h3>
+            <input style="outline: 1px solid black; padding: 2px;" type="file" id="landReceipt1" name="landReceipt1"
+                required>
+            <br>
+            <h3 class="nConnection-h3" style="margin:20 0 10 0;">8. Photo of LandReceipt2(Last Page of Land Receipt)<sup>*</sup></h3>
+            <input style="outline: 1px solid black; padding: 2px;" type="file" id="landReceipt1" name="landReceipt1"
+                required>
+            <br><br>
+            <input name="submit" type="submit" class="nConnection-submit"/>
+        </form>
+    </div>
+</body>
+<script>
+    function validate(evt) {
+        var theEvent = evt || window.event;
+
+        // Handle paste
+        if (theEvent.type === 'paste') {
+            key = event.clipboardData.getData('text/plain');
+        } else {
+            // Handle key press
+            var key = theEvent.keyCode || theEvent.which;
+            key = String.fromCharCode(key);
+        }
+        var regex = /[0-9]/;
+        if (!regex.test(key)) {
+            theEvent.returnValue = false;
+            if (theEvent.preventDefault) theEvent.preventDefault();
+        }
+    }
+</script>
